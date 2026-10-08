@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+String sname = "kushal";
+String city = "HYD";
+String course = "Java";
+
+pageContext.setAttribute("studentName",sname);
+pageContext.setAttribute("studentcourse", course, pageContext.REQUEST_SCOPE);
+pageContext.setAttribute("studentcity", city, pageContext.SESSION_SCOPE);
+pageContext.setAttribute("collegename", "MallaReddy college", pageContext.APPLICATION_SCOPE);
+%>
+
+
+<%
+Object sname1 = pageContext.getAttribute("studentName");
+Object city1 = pageContext.getAttribute("studentCity");
+Object course1 = pageContext.getAttribute("studentCourse");
+Object cname1 = pageContext.getAttribute("collegeName");
+%>
+
+<h2>studentName: <%=sname1 %></h2>
+<h2>studentCourse: <%=course1 %></h2>
+<h2>City: <%=city1 %></h2>
+<h2>collegeName: <%=cname1 %></h2>
+
+
+
+</body>
+</html>

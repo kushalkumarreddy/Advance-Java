@@ -1,0 +1,15 @@
+127.0.0.1 - - [29/Sep/2026:10:21:15 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:21:15 +0530] "GET /servlets/servlet/servlets.SimpleServlet HTTP/1.1" 404 799
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:21:15 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:22:55 +0530] "GET /servlets/WEB-INF/classes HTTP/1.1" 404 683
+127.0.0.1 - - [29/Sep/2026:10:26:02 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:26:03 +0530] "GET /servlets/servlet/servlet.SimpleServlet HTTP/1.1" 404 798
+127.0.0.1 - - [29/Sep/2026:10:29:53 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:29:53 +0530] "GET /servlets/servlet/servlet.SimpleServlet.SimpleServlet HTTP/1.1" 404 812
+127.0.0.1 - - [29/Sep/2026:10:30:48 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:30:49 +0530] "GET /servlets/servlet/servlet.SimpleServlet.SimpleServlet HTTP/1.1" 404 812
+127.0.0.1 - - [29/Sep/2026:10:41:27 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:41:27 +0530] "GET /servlets/servlet/servlet.SimpleServlet.SimpleServlet HTTP/1.1" 404 812
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:41:27 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [29/Sep/2026:10:43:56 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Sep/2026:10:43:57 +0530] "GET /servlets/helloservlet HTTP/1.1" 200 32

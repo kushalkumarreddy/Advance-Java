@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+</head>
+<body>
+
+    <h1>Student Login</h1>
+
+    <form action="StudentLogin" method="post">
+
+        <label>Student Name:</label>
+        <input type="text" name="sname" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+</body>
+</html>

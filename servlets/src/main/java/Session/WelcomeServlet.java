@@ -1,0 +1,45 @@
+package Session;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+@WebServlet("/WelcomeServlet")
+public class WelcomeServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        PrintWriter out = response.getWriter();
+
+        HttpSession session = request.getSession(false);
+
+        if (session != null && session.getAttribute("StudentName") != null) {
+
+            String sname = (String) session.getAttribute("StudentName");
+
+            out.println("<h1>Student Login Successful</h1>");
+            out.println("<h2>Welcome to Codegnan</h2>");
+            out.println("<h2>Welcome " + sname + "</h2>");
+
+            out.println("<br><br>");
+
+            // IMPORTANT: correct logout URL
+            out.println("<a href='LogoutServlet'>Logout</a>");
+
+        } else {
+
+            out.println("<h1>Please Login First</h1>");
+            out.println("<a href='slogin.html'>Login</a>");
+        }
+    }
+}

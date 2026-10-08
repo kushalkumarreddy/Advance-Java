@@ -1,0 +1,16 @@
+127.0.0.1 - - [06/Oct/2026:10:11:29 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:11:30 +0530] "GET /servlets/WelcomeServlet HTTP/1.1" 200 29
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:11:30 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [06/Oct/2026:10:16:12 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:16:12 +0530] "GET /servlets/slogin.html HTTP/1.1" 200 493
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:16:33 +0530] "POST /servlets/StudentLogin HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:16:38 +0530] "GET /servlets/slogin.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:16:59 +0530] "POST /servlets/StudentLogin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:16:59 +0530] "GET /servlets/WelcomeServlet HTTP/1.1" 200 140
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:17:02 +0530] "GET /servlets/LogoutServlet HTTP/1.1" 404 778
+127.0.0.1 - - [06/Oct/2026:10:18:47 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:18:47 +0530] "GET /servlets/slogin.html HTTP/1.1" 200 463
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:18:56 +0530] "POST /servlets/StudentLogin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:18:56 +0530] "GET /servlets/WelcomeServlet HTTP/1.1" 200 144
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:19:03 +0530] "GET /servlets/LogoutServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [06/Oct/2026:10:19:03 +0530] "GET /servlets/slogin.html HTTP/1.1" 304 -

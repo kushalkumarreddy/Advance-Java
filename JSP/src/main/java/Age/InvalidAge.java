@@ -1,0 +1,7 @@
+package Age;
+
+public class InvalidAge extends RuntimeException{
+	
+	
+	
+}
