@@ -1,9 +1,0 @@
-package Age;
-
-public class InvalidAge extends RuntimeException{
-	 private static final long serialVersionUID = 1L;
-
-	    public InvalidAge(String message) {
-	        super(message);
-}
-}
