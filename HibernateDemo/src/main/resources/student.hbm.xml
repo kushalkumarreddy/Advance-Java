@@ -9,7 +9,6 @@
     <class name="Codegnan.HibernateDemo.student" table="student">
 
         <id name="sid" column="sid">
-            <generator class="assigned"/>
         </id>
 
         <property name="sname" column="sname"/>
