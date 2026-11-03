@@ -1,0 +1,85 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- DOCTOR BEAN -->
+    <bean id="doctor" class="com.hospital.Doctor">
+
+        <property name="doctorId" value="101"/>
+
+        <property name="doctorName" value="Dr. Suresh"/>
+
+        <property name="specialization" value="Cardiologist"/>
+
+    </bean>
+
+
+    <!-- PATIENT BEAN : SINGLETON SCOPE -->
+    <bean id="patient" class="com.hospital.Patient"
+          scope="singleton">
+
+        <!-- Primitive Type Dependency Injection -->
+
+        <property name="patientId" value="501"/>
+
+        <property name="patientName" value="Ravi Kumar"/>
+
+        <property name="age" value="35"/>
+
+        <property name="phoneNumber" value="9876543210"/>
+
+
+        <!-- Reference Type Dependency Injection -->
+
+        <property name="doctor" ref="doctor"/>
+
+
+        <!-- Collection Type Dependency Injection -->
+
+        <!-- List: Medicines -->
+
+        <property name="medicines">
+            <list>
+                <value>Paracetamol</value>
+                <value>Vitamin C</value>
+                <value>Aspirin</value>
+            </list>
+        </property>
+
+
+        <!-- Set: Medical Tests -->
+
+        <property name="medicalTests">
+            <set>
+                <value>Blood Test</value>
+                <value>ECG</value>
+                <value>X-Ray</value>
+            </set>
+        </property>
+
+
+        <!-- Map: Test Fees -->
+
+        <property name="testFees">
+            <map>
+                <entry key="Blood Test" value="500"/>
+                <entry key="ECG" value="1000"/>
+                <entry key="X-Ray" value="1500"/>
+            </map>
+        </property>
+
+    </bean>
+
+
+    <!-- PATIENT BEAN : PROTOTYPE SCOPE -->
+
+    <bean id="patientPrototype"
+          parent="patient"
+          scope="prototype"/>
+
+</beans>
